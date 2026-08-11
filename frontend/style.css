@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.login-container {
+    background: white;
+    width: 350px;
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    margin-bottom: 8px;
+}
+
+.login-container p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ff6b35;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e85b2a;
+}
+
+.register {
+    margin-top: 20px;
+}
+
+.register a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.navbar {
+    background: white;
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    color: #ff6b35;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #ff6b35;
+}
+
+
+/* Welcome */
+
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.welcome input {
+    width: 400px;
+    max-width: 90%;
+
+    padding: 14px 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 25px;
+
+    font-size: 15px;
+}
+
+
+/* Categories */
+
+.categories {
+    padding: 20px 40px;
+}
+
+.categories h2,
+.popular h2 {
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: white;
+
+    width: 120px;
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    font-size: 30px;
+}
+
+.category p {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+
+/* Popular Foods */
+
+.popular {
+    padding: 30px 40px;
+}
+
+.food-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background: white;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.food-card h3 {
+    margin-bottom: 8px;
+}
+
+.food-card p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.food-card button {
+    width: 100%;
+}
+
+
+
+
+/* =========================
+   CART PAGE
+========================= */
+
+.cart-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.cart-section > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    background: white;
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item h3 {
+    margin-bottom: 8px;
+}
+
+.cart-item p {
+    color: #666;
+}
+
+.cart-total {
+    background: white;
+
+    margin-top: 25px;
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: right;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total button {
+    width: auto;
+    padding: 12px 25px;
+    margin-top: 15px;
+}
