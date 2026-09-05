@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Manage Food Items</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>🍔 Foodie - Admin</h1>
+
+        <nav>
+            <a href="admin.html">Admin Dashboard</a>
+            <a href="home.html">Home</a>
+        </nav>
+
+    </header>
+
+    <section class="admin-section">
+
+        <h2>Manage Food Items</h2>
+
+        <p>Here you can manage food items.</p>
+
+        <div class="admin-box">
+            <h3>🍕 Pizza</h3>
+            <p>Price: ₹150</p>
+            <button onclick="addFoodItem('Pizza')">Add Food Item</button>
+        </div>
+
+        <div class="admin-box">
+            <h3>🍔 Burger</h3>
+            <p>Price: ₹100</p>
+            <button onclick="addFoodItem('Burger')">Add Food Item</button>
+        </div>
+
+        <div class="admin-box">
+            <h3>🍝 Pasta</h3>
+            <p>Price: ₹120</p>
+           <button onclick="addFoodItem('Pasta')">Add Food Item</button>
+        </div>
+
+    </section>
+    <script>
+    function addFoodItem(foodName) {
+        alert(foodName + " added successfully!");
+    }
+</script>
+
+</body>
+
+</html>

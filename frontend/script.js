@@ -10,6 +10,7 @@ if (loginForm) {
 
         const email = document.querySelector('input[type="email"]').value;
         const password = document.querySelector('input[type="password"]').value;
+        const role = document.getElementById("role").value;
 
         if (email === "" || password === "") {
 
@@ -18,9 +19,50 @@ if (loginForm) {
 
         }
 
-        alert("Login Successful! Welcome to Foodie 🍔");
+        if (password.length < 8) {
+    alert("Password must be at least 8 characters");
+    return;
+}
+if (!/^[A-Z]/.test(password)) {
+    alert("Password must start with a capital letter");
+    return;
+}
+if (!/[0-9]/.test(password)) {
+    alert("Password must contain at least one number");
+    return;
+}
+if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    alert("Password must contain at least one special character");
+    return;
+}
 
+fetch("http://localhost:8080/api/login", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        email: email,
+        password: password,
+        role: role
+    })
+})
+.then(response => response.json())
+.then(data => {
+
+    alert(data.message);
+
+    if (role === "admin") {
+        window.location.href = "admin.html";
+    } else {
         window.location.href = "home.html";
+    }
+
+})
+.catch(error => {
+    console.error(error);
+    alert("Backend connection failed!");
+});
 
     });
 

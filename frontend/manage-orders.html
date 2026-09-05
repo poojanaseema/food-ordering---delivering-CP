@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Manage Orders</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>🍔 Foodie - Admin</h1>
+
+        <nav>
+            <a href="admin.html">Admin Dashboard</a>
+            <a href="home.html">Home</a>
+        </nav>
+
+    </header>
+
+    <section class="admin-section">
+
+        <h2>Manage Orders</h2>
+
+        <p>View customer orders and order status.</p>
+
+        <div class="admin-box">
+            <h3>Order #1001</h3>
+            <p>Customer: Pooja</p>
+            <p>Food: Pizza</p>
+            <p>Status: Preparing</p>
+            <button>Update Status</button>
+        </div>
+
+        <div class="admin-box">
+            <h3>Order #1002</h3>
+            <p>Customer: Customer 2</p>
+            <p>Food: Burger</p>
+            <p>Status: Delivered</p>
+            <button onclick="updateStatus()">Update Status</button>
+        </div>
+
+    </section>
+    <script>
+    function updateStatus() {
+        alert("Order status updated successfully!");
+    }
+</script>
+
+</body>
+
+</html>
